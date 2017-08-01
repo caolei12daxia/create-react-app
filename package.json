@@ -1,5 +1,7 @@
 {
-  "private": true,
+  "name": "create-spark-ui",
+  "version": "1.0.0",
+  "description": "create spark ui",
   "scripts": {
     "build": "node packages/react-scripts/scripts/build.js",
     "changelog": "lerna-changelog",
@@ -12,6 +14,19 @@
     "test": "node packages/react-scripts/scripts/test.js --env=jsdom",
     "format": "prettier --trailing-comma es5 --single-quote --write 'packages/*/*.js' 'packages/*/!(node_modules)/**/*.js'",
     "precommit": "lint-staged"
+  },
+  "keywords": [
+    "spark",
+    "freewheel"
+  ],
+  "author": "freewheel ui-foundation team",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://git.dev.fwmrm.net/ui/spark-ui.git"
+  },
+  "publishConfig": {
+    "registry": "http://nexus.dev.fwmrm.net/nexus3/repository/npm-internal/"
   },
   "devDependencies": {
     "eslint": "3.19.0",
