@@ -23,7 +23,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://git.dev.fwmrm.net/ui/spark-ui.git"
+    "url": "https://github.com/caolei12daxia/create-react-app.git"
   },
   "publishConfig": {
     "registry": "http://nexus.dev.fwmrm.net/nexus3/repository/npm-internal/"
