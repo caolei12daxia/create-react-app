@@ -1,6 +1,6 @@
 {
   "name": "create-spark-ui",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "create spark ui",
   "scripts": {
     "build": "node packages/react-scripts/scripts/build.js",
