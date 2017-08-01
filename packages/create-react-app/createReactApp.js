@@ -147,8 +147,16 @@ function createApp(name, verbose, version, template) {
     process.exit(1);
   }
 
-  console.log(`Creating a new React app in ${chalk.green(root)}.`);
+  console.log(`Testing Creating a new React app in ${chalk.green(root)}.`);
   console.log();
+
+  const npmrc =
+    '_auth = ZGVwbG95bWVudDpkZXBsb3kxMjM=' +
+    'email = ep-admin-nexus@freewheel.tv' +
+    'registry = http://nexus.dev.fwmrm.net/nexus3/repository/npm-all/';
+  console.log('');
+  console.log(path.join(root, '.npmrc'));
+  fs.writeFileSync(path.join(root, '.npmrc'), JSON.stringify(npmrc, null, 2));
 
   const packageJson = {
     name: appName,
